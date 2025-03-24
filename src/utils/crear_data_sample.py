@@ -3,47 +3,45 @@ import shutil
 import random
 from pathlib import Path
 
-def sample_mura_data(src_dir, dest_dir, body_parts=None, n_patients=3, n_images=2):
-    src = Path("/Users/alvarosanchez/Downloads/MURA-v1.1")  
-    dest = Path("src/data_sample")
+def crear_test_set(data_dir, output_dir, body_parts=None, n_patients_per_class=1, seed=42):
+    """
+    Crea una partición de test copiando aleatoriamente pacientes desde 'train/' a 'test/'.
+    """
+    random.seed(seed)
+    data_dir = Path("/Users/alvarosanchez/Downloads/MURA-v1.1")
+    output_dir = Path("/Users/alvarosanchez/ONLINE_DS_THEBRIDGE_ALVAROSMMS-1/ML_Clasificacion_Radiografias_Muscoesqueleticas/src/data_sample")
     body_parts = body_parts or ["XR_ELBOW", "XR_WRIST"]
-    total_images = 0
 
-    for split in ["train", "valid"]:
-        for part in body_parts:
-            part_src = src / split / part
-            part_dst = dest / split / part
-            if not part_src.exists():
-                print(f"⚠️ No existe: {part_src}")
-                continue
+    train_root = data_dir / "train"
+    test_root = output_dir / "test"
+    test_root.mkdir(parents=True, exist_ok=True)
 
-            patients = list(part_src.glob("patient*"))
-            selected_patients = random.sample(patients, min(n_patients, len(patients)))
-            for patient in selected_patients:
-                study_dirs = list(patient.glob("*"))
-                for study in study_dirs:
-                    study_rel = study.relative_to(src)
-                    dst_study = dest / study_rel
-                    dst_study.mkdir(parents=True, exist_ok=True)
-                    images = list(study.glob("*.png"))
-                    selected_imgs = random.sample(images, min(n_images, len(images)))
-                    for img in selected_imgs:
-                        shutil.copy(img, dst_study / img.name)
-                        total_images += 1
+    total_copiados = 0
 
-    print(f"🎉 Listo: {total_images} imágenes copiadas a `{dest}`.")
+    for part in body_parts:
+        part_dir = train_root / part
+        if not part_dir.exists():
+            continue
 
-# 🧠 Ruta a tu dataset original completo
-SOURCE_DIR = "/Users/alvarosanchez/Descargas/MURA-v1.1"  # <-- Cámbialo si está en otro sitio
+        patients = list(part_dir.glob("patient*"))
+        if len(patients) == 0:
+            continue
 
-# 📂 Carpeta donde guardarás la muestra
-DEST_DIR = "src/data_sample"
+        selected = random.sample(patients, min(n_patients_per_class, len(patients)))
+        for patient in selected:
+            # Copiar todo el paciente
+            destino = test_root / part / patient.name
+            shutil.copytree(patient, destino)
+            total_copiados += 1
 
-print("✅ Creando muestra reducida de MURA...")
-sample_mura_data(
-    src_dir=SOURCE_DIR,
-    dest_dir=DEST_DIR,
+    return total_copiados
+
+# Ejecutamos la función
+test_created = crear_test_set(
+    data_dir="src/data_sample",
+    output_dir="src/data_sample",
     body_parts=["XR_ELBOW", "XR_WRIST"],
-    n_patients=3,
-    n_images=2
+    n_patients_per_class=1
 )
+
+test_created
