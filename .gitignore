@@ -1,10 +1,68 @@
-__pycache__/
+# ======================
+# 🐍 Python
+# ======================
 *.pyc
-.ipynb_checkpoints/
-.env/
+*.pyo
+__pycache__/
+*.ipynb_checkpoints
+.env
 .venv/
-data/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# ======================
+# 📓 Jupyter Notebooks
+# ======================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.checkpoint.ipynb
+
+# ======================
+# 🔥 PyTorch & Modelos
+# ======================
+*.pt
+*.pth
+*.joblib
+*.h5
+*.onnx
 models/
-results_notebook/
-.vscode/
+checkpoints/
+*.ckpt
+
+# ======================
+# 📊 Datos (sube solo muestras en /data_sample)
+# ======================
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.zip
+*.tar.gz
+*.hdf5
+*.npy
+*.npz
+*.pickle
+
+# Puedes mantener solo muestras ligeras:
+# !src/data_sample/
+
+# ======================
+# 💻 Sistema / IDEs
+# ======================
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.bak
+*.swp
+*.tmp
+
+# ======================
+# 🔐 Seguridad
+# ======================
+*.pem
+*.key
+*.crt
