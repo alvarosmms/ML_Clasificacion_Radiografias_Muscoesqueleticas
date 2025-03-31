@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/PyTorch-%3E=2.0-orange)](https://pytorch.org/)
-[![Status](https://img.shields.io/badge/status-In%20Progress-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Completed-brightgreen.svg)]()
 [![Model](https://img.shields.io/badge/model-ResNet18-blueviolet)]()
 
 This project applies Deep Learning techniques to classify musculoskeletal radiographs as **normal** or **abnormal**. It is designed as an experimental tool to support medical diagnostics, using a transfer learning approach.
@@ -51,14 +51,16 @@ This project follows a modern computer vision pipeline using deep learning:
 
 ## 🧱 Project Structure
 
+```plaintext
 src/ │ ├── data_sample/ # Lightweight data samples
      │ ├── img/ # Project-related or visualization images 
      │ ├── notebooks/ # Experimental or exploratory Jupyter notebooks
      │ ├── results_notebook/ # Final notebook with clean, reproducible code
      │ ├── models/ # Saved models (state_dict as .pt or .joblib)
      │ └── utils/ # Helper functions, utility scripts, custom classes
+```
 
-📌 *Note*: Large data files have not been uploaded to GitHub. Only small samples have been included in `data_sample/`.
+📌 *Note*: Large data files have not been uploaded to GitHub, however they can be found at [Stanford ML Group](https://stanfordmlgroup.github.io/competitions/mura/) .
 
 ---
 
