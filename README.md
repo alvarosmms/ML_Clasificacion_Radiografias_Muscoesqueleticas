@@ -64,7 +64,7 @@ src/
 
 ```
 
-📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub, pero pueden ser encontrados en [Stanford ML Group](https://stanfordmlgroup.github.io/competitions/mura/)
+📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub, pero pueden ser encontrados en [Stanford ML Group](https://stanfordmlgroup.github.io/competitions/mura/) .
 
 ---
 
@@ -90,3 +90,8 @@ Para entrenar o evaluar el modelo, asegúrate de:
 Este proyecto es solo con fines educativos y de investigación. **No debe utilizarse para diagnósticos clínicos reales** sin validación rigurosa por parte de profesionales médicos.
 
 ---
+
+---
+
+✍️ Autor
+Álvaro Sánchez Martín
