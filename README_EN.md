@@ -103,3 +103,6 @@ This project is intended for **educational and research purposes only**.
 It is **not suitable for clinical use** without rigorous validation by certified medical professionals.
 
 ---
+
+✍️ Autor
+Álvaro Sánchez Martín
