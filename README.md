@@ -62,6 +62,7 @@ src/
 │   ├── models/             # Modelos guardados (state_dict en .pt o .joblib)
 │   └── utils/              # Funciones auxiliares, módulos personalizados y clases
 
+```
 
 📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub. Usa solo la muestra en `data_sample/`.
 
