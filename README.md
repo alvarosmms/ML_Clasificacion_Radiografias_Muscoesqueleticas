@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/PyTorch-%3E=2.0-orange)](https://pytorch.org/)
-[![Status](https://img.shields.io/badge/status-En%20progreso-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Completado-brightgreen.svg)]()
 [![Modelo](https://img.shields.io/badge/modelo-ResNet18-blueviolet)]()
 
 > 🇬🇧 Looking for the English version? 👉 [README_EN.md](README_EN.md)
@@ -64,7 +64,7 @@ src/
 
 ```
 
-📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub. Usa solo la muestra en `data_sample/`.
+📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub, pero pueden ser encontrados en [Stanford ML Group](https://stanfordmlgroup.github.io/competitions/mura/)
 
 ---
 
