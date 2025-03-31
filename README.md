@@ -53,12 +53,7 @@ El enfoque del proyecto combina prácticas modernas de Deep Learning en visión 
 
 ## 📁 Estructura del repositorio
 
-src/ │ ├── data_sample/ # Subconjunto de datos ligeros
-     │ ├── img/ # Imágenes necesarias para el proyecto o visualizaciones 
-     │ ├── notebooks/ # Notebooks usados para pruebas y desarrollo exploratorio 
-     │ ├── results_notebook/ # Notebook final, limpio y reproducible con el modelo entrenado 
-     │ ├── models/ # Modelos guardados (state_dict en .pt o .joblib) 
-     │ └── utils/ # Funciones auxiliares, módulos personalizados y clases
+src/ ├── data_sample/ # Subconjunto de datos ligeros ├── img/ # Imágenes necesarias para el proyecto o visualizaciones ├── notebooks/ # Notebooks usados para pruebas y desarrollo exploratorio ├── results_notebook/ # Notebook final, limpio y reproducible con el modelo entrenado ├── models/ # Modelos guardados (state_dict en .pt o .joblib) └── utils/ # Funciones auxiliares, módulos personalizados y clases
 
 📌 *Nota*: Los archivos con los datos completos no se han subido a GitHub. Usa solo la muestra en `data_sample/`.
 
