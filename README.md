@@ -43,7 +43,7 @@ Esto no pretende sustituir al profesional médico, sino actuar como un sistema d
 El enfoque del proyecto combina prácticas modernas de Deep Learning en visión por computador:
 
 - Modelo base: `ResNet18` preentrenado en ImageNet
-- Fine-tuning parcial: solo se descongelan las capas más profundas (`layer2`, `layer3`, `layer4`, `fc`)
+- Fine-tuning parcial: solo se descongelan las capas más profundas (`layer3`, `layer4`, `fc`)
 - Aumentos de datos: rotación, recorte aleatorio, jitter de color, etc.
 - Manejo de desbalance:
   - Ponderación de clases en la función de pérdida (`CrossEntropyLoss`)
