@@ -22,12 +22,10 @@ env/
 # ======================
 # 🔥 PyTorch & Modelos
 # ======================
-*.pt
 *.pth
 *.joblib
 *.h5
 *.onnx
-models/
 checkpoints/
 *.ckpt
 
