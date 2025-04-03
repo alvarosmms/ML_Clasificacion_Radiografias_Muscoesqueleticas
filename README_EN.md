@@ -104,5 +104,6 @@ It is **not suitable for clinical use** without rigorous validation by certified
 
 ---
 
-✍️ Author
+## ✍️ Author
+
 Álvaro Sánchez Martín
