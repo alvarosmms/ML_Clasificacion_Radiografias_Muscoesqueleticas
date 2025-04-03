@@ -1,4 +1,4 @@
-![Banner](/Users/alvarosanchez/ONLINE_DS_THEBRIDGE_ALVAROSMMS-1/ML_Clasificacion_Radiografias_Muscoesqueleticas/src/img/BannerEN.png)
+![Banner](src/img/BannerEN.png)
 
 # Musculoskeletal Radiograph Classification with Deep Learning
 
