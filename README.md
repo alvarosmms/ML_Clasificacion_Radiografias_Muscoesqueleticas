@@ -1,7 +1,5 @@
 ![Banner](src/img/BannerES.png)
 
-# Clasificación de Radiografías Musculoesqueléticas con Deep Learning
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/PyTorch-%3E=2.0-orange)](https://pytorch.org/)
