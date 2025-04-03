@@ -91,7 +91,6 @@ Este proyecto es solo con fines educativos y de investigación. **No debe utiliz
 
 ---
 
----
+## ✍️ Autor
 
-✍️ Autor
 Álvaro Sánchez Martín
