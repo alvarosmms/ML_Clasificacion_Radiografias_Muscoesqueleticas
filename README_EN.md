@@ -1,4 +1,6 @@
-# 🩻 Musculoskeletal Radiograph Classification with Deep Learning
+![Banner](/Users/alvarosanchez/ONLINE_DS_THEBRIDGE_ALVAROSMMS-1/ML_Clasificacion_Radiografias_Muscoesqueleticas/src/img/BannerEN.png)
+
+# Musculoskeletal Radiograph Classification with Deep Learning
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
