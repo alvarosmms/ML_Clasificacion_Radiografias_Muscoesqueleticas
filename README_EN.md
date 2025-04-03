@@ -38,7 +38,7 @@ This tool is not intended to replace radiologists, but to serve as an **initial 
 This project follows a modern computer vision pipeline using deep learning:
 
 - Base model: `ResNet18` pretrained on ImageNet
-- Partial fine-tuning: only deeper layers (`layer2`, `layer3`, `layer4`, `fc`) were unfrozen
+- Partial fine-tuning: only deeper layers (`layer3`, `layer4`, `fc`) were unfrozen
 - Data augmentation: random rotation, crop, color jitter, etc.
 - Class imbalance handling:
   - Weighted loss function (`CrossEntropyLoss`)
