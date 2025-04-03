@@ -6,7 +6,10 @@
 [![Status](https://img.shields.io/badge/status-Completado-brightgreen.svg)]()
 [![Modelo](https://img.shields.io/badge/modelo-ResNet18-blueviolet)]()
 
-> 🇬🇧 Looking for the English version? 👉 [README_EN.md](README_EN.md)
+
+
+🇬🇧 Looking for the English version? 👉 [README_EN.md](README_EN.md)
+
 
 Este proyecto aplica técnicas de Deep Learning para clasificar radiografías musculoesqueléticas como **normales** o **anormales**. Está diseñado como una herramienta experimental de apoyo al diagnóstico médico, utilizando un enfoque basado en transfer learning.
 
